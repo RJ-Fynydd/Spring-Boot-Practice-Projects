@@ -1,0 +1,48 @@
+/*
+    Created on : Jan 7, 2018, 10:13:39 PM
+    Author     : Richard Nader <richard.nader@fynydd.com>
+*/
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px;
+}
+
+.uploadForm {
+    background-color: #1a8cff;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px;
+
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+#inputFile {
+    display: inline-block;
+}
+
+#inputButton {
+    display: inline;
+    width: 290px;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .uploadForm {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+    }
+}

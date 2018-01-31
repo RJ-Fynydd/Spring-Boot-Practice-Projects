@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <!--Google Analytics-->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-112028620-1" />
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-112028620-1');
+
+
+            function trigger() {
+                gtag('event', 'button_Clicked', {
+                    'some_words': 'reeeeeeeee'
+                });
+            }
+        </script>
+
+
+        <title>Upload page</title>
+        <link type="text/css" rel="stylesheet" th:href="uploadStyle.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    <body>
+        <h1 class="title">Upload files to Potato's Computer...</h1>
+
+        <div class="uploadForm">
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <input id="inputFile" type="file" name="file" />
+                <input id="inputButton" type="submit" value="Submit" />
+            </form>
+            <button onclick="trigger()">Trigger Event</button>
+        </div>
+    </body>
+</html>
