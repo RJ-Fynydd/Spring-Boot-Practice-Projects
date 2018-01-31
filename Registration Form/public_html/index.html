@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>Register</h1>
+
+        <form>
+
+            <label id="firstName">First Name: </label>
+            <input name="firstName" type="text" id="firstName" required />
+            <label id="lastName">Last Name: </label>
+            <input name="lastName" type="lastName" id="firstName" required />
+
+            <br/>
+
+            <label id="male">Male: </label>
+            <input name="gender" id="male" type="radio" />
+            <label id="female">Female: </label>
+            <input name="gender" id="female" type="radio" />
+            <label id="other">Other: </label>
+            <input name="gender" id="other" type="radio" />
+
+            <br/>
+
+            <label id="email">Email: </label>
+            <input type="email" name="email" required />
+            <label id="password">Password: </label>
+            <input type="password" name="password" minlength="4" maxlength="16" required />
+
+            <br/>
+
+            <label>Birthday: </label>
+            <select name="month">
+                <option value="1">January</option>
+                <option value="2">Febuary</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+            </select>
+            <select name="day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="year">
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2014</option>
+            </select>
+
+            <br/>
+
+            <label id="accept">I accept the terms and conditions: </label>
+            <input type="checkbox" name="terms"/>
+
+            <br/>
+
+            <input type="submit" />
+        </form>
+
+
+
+    </body>
+</html>

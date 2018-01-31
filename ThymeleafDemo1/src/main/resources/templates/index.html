@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Thymeleaf Demo</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" th:href="@{/style.css}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"/>
+        <script th:src="@{/UI.js}"/>
+        <script>
+
+        </script>
+
+
+    </head>
+    <body>
+        <div class="greeting">
+            <h1 th:text="#{index.greeting(${name})}">Greeting</h1>
+        </div>
+
+        <!--
+        <div class="time">
+            <h1 th:text="#{index.preTime(${time})}">Time</h1>
+        </div>
+        <br/>
+        <div class="date">
+            <h1 th:text="#{index.preDate(${date})}">Date</h1>
+        </div>
+        <br/>
+        <div class="locale">
+            <h1 th:text="#{index.preLocale(${locale})}">Locale</h1>
+        </div>
+
+
+        <div th:object="${bottleOfWater}">
+            <span th:text="${bottleOfWater.getBrand()}"></span>
+            <span th:text="${bottleOfWater.getWaterVolume()}"></span>
+            <span th:text="${bottleOfWater.isPurified()}"></span>
+        </div>
+        -->
+
+        <div id="hideButton"><button>Toggle Table</button></div>
+        <table class="waterTable">
+            <thead>
+            <th>Brand</th>
+            <th>Size</th>
+            <th>Type</th>
+        </thead>
+        <tbody th:each="bottle : ${bottleArray}">
+        <td th:text="${bottle.getBrand()}"></td>
+        <td th:text="${bottle.getWaterVolume() + ' FL OZ'}"></td>
+        <td th:text="${bottle.isPurified()}"></td>
+    </tbody>
+</table>
+
+
+</body>
+</html>

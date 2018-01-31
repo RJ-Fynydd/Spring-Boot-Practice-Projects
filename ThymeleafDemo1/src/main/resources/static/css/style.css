@@ -1,0 +1,81 @@
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT",
+        "Myriad Pro", "DejaVu Sans Condensed",
+        Helvetica, Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url("http://www.energyrecovery.com/wp-content/uploads/2014/12/Water-1600x900.jpg");
+}
+
+.greeting {
+    padding: 3px;
+    color: #ff9933;
+    margin: auto;
+    text-align: center;
+
+}
+
+#hideButton {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#hideButton, button {
+    background-color: #00b8ff;
+    border: none;
+    width: 200px;
+    height: 75px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.waterTable {
+    margin: 15px auto;
+    border: white solid 3px;
+    color: #ff9933;
+    font-size: 15pt;
+    border-collapse: collapse;
+    width: 75%;
+    background-color: black;
+}
+
+.waterTable, th, td {
+    border: 1px solid #ff9933;
+}
+
+.waterTable th {
+    font-size: 17pt;
+}
+
+.waterTable td {
+    padding: 10px;
+}
+
+.waterTable tr:nth-of-type(even) {
+    background: #626262;
+}
+
+.time {
+    padding: 3px;
+    float: left;
+    color: #ff9933;
+    display: block;
+
+}
+
+.date {
+    padding: 3px;
+    float: right;
+    color: #ff9933;
+    display: block;
+}
+
+.locale {
+    padding: 3px;
+    float: left;
+    color: #ff9933;
+    display: block;
+}
